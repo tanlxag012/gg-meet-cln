@@ -1,6 +1,6 @@
 const socket = io('/')
 const myPeer = new Peer(undefined, {
-     host: '/'   
+    //  host: '/'   
     // port: '3001'
 })
 const peers = {};
