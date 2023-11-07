@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const ROOM_ID = "<%= roomId %>"
+    </script>
+    <script defer src="https://unpkg.com/peerjs@1.5.0/dist/peerjs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/room.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="videos" id="video-grid"></div>
+    <div class="room_navbar">
+        <div class="audio_navbar">
+            <div title="Micro" class="audio_navbar_item"><button name="micro" class="audio_navbar_item_icon"><i class=" fa-solid fa-microphone"></i></button></div>
+            <div title="Camera" class="audio_navbar_item"><button name="camera" class="audio_navbar_item_icon"><i class=" fa-solid fa-camera"></i></button></div>
+            <div title="Chia sẻ màn hình" class="audio_navbar_item"><button name="screenShare" class="audio_navbar_item_icon"><i class=" fa-solid fa-person-chalkboard"></i></button></i></div>
+            <div title="Thoát" class="audio_navbar_item"><button name="exit" class="audio_navbar_item_icon"><i class=" fa-solid fa-phone-slash"></i></button></div>
+        </div>
+        <div class="audio_navbar_chat"><i class="fa-solid fa-comment-dots"></i></div>
+
+    </div>
+</body>
+</html>
